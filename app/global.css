@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    h1 {
+      @apply text-3xl;
+      @apply text-blue;
+      @apply font-sans;
+    }
+    h2 {
+      @apply text-2xl;
+      @apply text-gray-dark;
+      @apply font-sans;
+    
+    }
+    p{
+        @apply text-xl;
+        @apply font-sans;
+        @apply text-gray-dark;
+
+
+
+
+    }
+
+
+    /* ... */
+  }
+
+@layer components {
+    .card {
+      width: 25rem;
+      height:20rem;
+      color:theme('colors.blue');
+      /* background-color:theme('colors'); */
+      border-radius: theme('borderRadius.4xl');
+      padding: theme('spacing.6');
+      box-shadow: theme('boxShadow.xl');
+      border-color:theme('colors.pink-dark');
+    }
+
+    .card:hover{
+        background-color:theme('colors.gray-light');
+        
+
+    }
+
+    .transitioned-card{
+      transition: margin-left 4s ease-in-out 1s;
+      background-color:"#f4feff";
+
+    }
+
+    .transitioned-card:hover{
+      transform: scale(1.1);
+      /* background-color: theme('colors.green'); */
+
+      
+    }
+
+    .Button{
+      color: #000000;
+      background-color: theme('colors.blue');
+    }
+
+    .Link{
+      color:theme('colors.blue');
+    }
+
+    /* ... */
+
+
+} 
