@@ -20,10 +20,10 @@
         @apply text-xl;
         @apply font-sans;
         @apply text-gray-dark;
-
-
-
-
+    }
+    li{
+      @apply text-blue;
+      @apply py-2;
     }
 
 

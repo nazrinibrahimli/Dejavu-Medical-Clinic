@@ -7,25 +7,18 @@ import Image from 'next/image';
 import landing from 'public/static/cooperation.jpeg'
 import AddIcCallSharpIcon from '@mui/icons-material/AddIcCallSharp';
 import RegistrationForm from './registrationForm';
-const register = () => {
+
+const Register = () => {
   return (
-    <div className='relative overflow-hidden  mt-[4rem] lg:mx-[8rem] py-[4rem] mb-[8rem] rounded-xl  bg-[#4f45b8] '>
-       <Box>
-         <Grid container>
-           <Grid item md={12} lg={6} className="flex justify-center items-center">
-           <div className='z-40 mx-[4rem] '>
-              <div className='w-[13rem] h-[13rem] bg-gray-light rounded-full absolute top-[-3.2rem] left-[-120px] z-20'></div>
-              <div className='w-[13rem] h-[13rem] bg-blue rounded-full absolute top-[-7rem] left-[-40px] z-10'></div>
-              <h1 className='text-center lg:w-[23rem] md:w-[16rem] font-medium text-white my-[3rem]'>We are here to help you grow your business</h1>
-            </div>
-           </Grid>
-           <Grid item md={12} lg={6} className="mx-auto flex justify-center items-center"  >
-              <RegistrationForm/>
-           </Grid>
-         </Grid>
-       </Box> 
-    </div>
+    <div className='mt-[4rem] lg:mx-[8rem] py-[5rem] rounded-xl  bg-white '>
+        <h1 className='text-center font-bold text-blue mt-[3rem]'>Book your <span className='text-green'>first appointment</span> today with our professional doctors.</h1>
+        <p className='text-center text-gray mt-[1rem]'>Get the care you and your family deserve</p>
+        <div className='flex justify-center'>
+        <Button variant="contained" className='mt-[2rem] font-sans bg-gradient-to-r from-[#00d4ff] to-[#020024]  text-sm   rounded-3xl mr-[1rem] h-[3rem] hover:bg-gray-dark '>Let's get started</Button>
+        </div>
+        </div>
+
   )
 }
 
-export default register
+export default Register

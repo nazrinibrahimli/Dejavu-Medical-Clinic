@@ -12,9 +12,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import LandingPage from './components/landing';
+import Register from './components/register';
 // import bonadea from "public/static/bonadea."
 import Services from './services/page';
 import Numbers from './components/services';
+import SpecialServices from './components/specialServices';
+import Doctors from './components/doctors';
+
 
 export default function Home() {
 
@@ -31,7 +35,7 @@ export default function Home() {
 
 
   return (
-    <main >
+    <main  className='bg-main'>
 
     <LandingPage/>
     {/* <Box>
@@ -50,9 +54,11 @@ export default function Home() {
       </Box> */}
 
     <Numbers/>  
+    <SpecialServices/>
+    <Doctors/>
 
 
-
+{/* 
 
 
 
@@ -82,14 +88,6 @@ export default function Home() {
                 Businessman
               </Typography>
             </CardContent>
-            {/* <CardMedia
-              component="img"
-              alt="doctor"
-              image="/static/client.jpg"
-              sx={{ padding: "1em 1em 1rem 1em", objectFit: "cover", }}
-
-            /> */}
-
           </Card> 
                 </Grid>
 
@@ -139,7 +137,6 @@ export default function Home() {
                <Grid item xs={12} lg={4} sx={{justifyContent:"center", display:"flex"}}>
                    <Card sx={{ maxWidth: 345 }} className="card">
             <CardContent >
-
               <Typography variant="body3" color="" className='text-lg font-sans '>
                 Lizards are a widespread group of squamate reptiles, with over 6,000
                 species, ranging across all continents except Antarctica
@@ -151,19 +148,10 @@ export default function Home() {
 
  </Box>
     ) : null}
-
-
-
-
-
-
-
-
-
-
-
   </Box>
-</ClickAwayListener>
+</ClickAwayListener> */}
+
+<Register/>
     </main>
   )
 }

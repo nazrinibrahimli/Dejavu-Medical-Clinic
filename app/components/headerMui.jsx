@@ -8,27 +8,24 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-
+import MedicationIcon from '@mui/icons-material/Medication';
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: "white",
-  '&:hover': {
-    backgroundColor: "white",
-  },
+  backgroundColor: "#f4feff",
   marginLeft: 0,
   width: '100%',
   [theme.breakpoints.up('sm')]: {
     marginLeft: theme.spacing(1),
     width: 'auto',
   },
-  border: "1px solid gray"
+  border: "0.5px solid gray"
 
 }));
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
   padding: theme.spacing(0, 2),
-  color:"black",
+  color:"#aeb9c8",
   height: '100%',
   position: 'absolute',
   pointerEvents: 'none',
@@ -58,17 +55,20 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1,}} >
-      <AppBar position="static" sx={{backgroundColor:"#f4feff",paddingLeft:"4rem" }}>
-        <Toolbar>
+      <AppBar position="static" sx={{backgroundColor:"#ebf4fa", }}>
+        <Toolbar className='pl-[4rem]'>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: "#003f70" }}
+            className="text-2xl font-bold "
           >
-            Dejavu
+            Dejavu Clinic
+            <MedicationIcon sx={{fontSize: 35, paddingBottom:1}}/>
           </Typography>
-          <Search>
+          <Search 
+          >
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -80,7 +80,7 @@ export default function SearchAppBar() {
           <IconButton
             size="large"
             edge="start"
-            color="black"
+            color="gray"
             aria-label="open drawer"
             sx={{ ml: 2 }}
           >

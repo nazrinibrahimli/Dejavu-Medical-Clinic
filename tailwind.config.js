@@ -23,11 +23,12 @@ module.exports = {
       'orange': '#f56533',
       'dark-orange':'#d45124',
       'gray-dark': '#273444',
-      'gray': '#8492a6',
+      'gray': '#aeb9c8',
       'gray-light': '#d3dce6',
       'green':"#2dacbe",
       'dark-blue':"#003f70",
-      'light-blue':"#4899b8"
+      'light-blue':"#4899b8",
+      'main':"#ebf4fa"
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
