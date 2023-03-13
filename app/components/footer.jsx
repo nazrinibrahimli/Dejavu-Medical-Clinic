@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 const Footer = () => {
   return (
     <div>
-      <footer className='bg-[#b5d6e6] md:h-[25rem] lg:h-[20rem] w-full  '>
+      <footer className='bg-main md:h-[25rem] lg:h-[20rem] w-full  '>
         <div className='flex justify-between px-[4rem] py-[3rem] h-full'>
         <Box sx={{ flexGrow: 1 }} className="">
           <Grid container spacing={0} className="">

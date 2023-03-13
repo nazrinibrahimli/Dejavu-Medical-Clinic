@@ -9,7 +9,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+import {Typography,Pagination,} from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import LandingPage from './components/landing';
 import Register from './components/register';
