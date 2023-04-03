@@ -43,7 +43,7 @@ const Numbers = () => {
     </Card>
         </Grid>
 
-            <Grid item xs={12} md={6} lg={4}>
+            {/* <Grid item xs={12} md={6} lg={4}>
             <Card sx={{ maxWidth: 350,maxHeight: 590,borderRadius: 5 ,}} className="transitioned-card mx-auto bg-green">
       <CardMedia
         sx={{ height: 180 }}
@@ -61,9 +61,29 @@ const Numbers = () => {
          <Button size="small" className='font-sans text-white'>Learn More</Button>
       </CardActions>
     </Card>
-     </Grid>
+     </Grid> */}
 
+<Grid item xs={12} md={6} lg={4}>
+       <Card sx={{ maxWidth: 350,maxHeight: 590,borderRadius: 5 ,}} className="transitioned-card mx-auto bg-[#ffffff]">
+       <CardMedia
+        sx={{ height: 180 }}
+        image="/static/drugstore.jpg"
+        title="green iguana"
+      />
+      <CardContent  sx={{mx:2, mb:3}}>
+        <Typography gutterBottom variant="h5" component="div" className=' font-sans font-medium text-blue'>
+          Health Store
+        </Typography>
+        <Typography variant="body1" color="" className='font-sans h-[7rem]'>
+        Talk about the health complaints you are experiencing and don't hesitate to ask about the proper treatment.    
+        </Typography>
 
+      </CardContent>
+      <CardActions  sx={{mx:2, mb:3}}>
+        <Button size="small" className='font-sans text-blue'>Learn More</Button>
+      </CardActions>
+    </Card>
+        </Grid>
 
 
         <Grid item xs={12} md={6} lg={4}>
