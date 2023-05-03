@@ -25,7 +25,7 @@ const Search = styled('div')(({ theme }) => ({
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
   padding: theme.spacing(0, 2),
-  color:"#aeb9c8",
+  color:"#072852",
   height: '100%',
   position: 'absolute',
   pointerEvents: 'none',
@@ -55,13 +55,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1,}} >
-      <AppBar position="static" sx={{backgroundColor:"#ebf4fa", }}>
+      <AppBar position="static" sx={{backgroundColor: "#072852", padding:'0.4rem 0' }}>
         <Toolbar className='pl-[4rem]'>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: "#003f70" }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: "white" }}
             className="text-2xl font-bold "
           >
             Dejavu Clinic
@@ -80,11 +80,11 @@ export default function SearchAppBar() {
           <IconButton
             size="large"
             edge="start"
-            color="gray"
+            color="#072852"
             aria-label="open drawer"
             sx={{ ml: 2 }}
           >
-            <MenuIcon sx={{color:"#020024"}}/>
+            <MenuIcon sx={{color:"white"}}/>
           </IconButton >
         </Toolbar>
       </AppBar>

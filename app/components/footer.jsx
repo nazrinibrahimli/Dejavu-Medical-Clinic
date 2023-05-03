@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </footer>
               
-      <div className='bg-[black]  h-[5rem] flex justify-around items-center'>
+      <div className='bg-[#072852]  h-[5rem] flex justify-around items-center'>
           <p className='text-[white] sm:text-xs md:text-base'>Ⓒ Copyright @agent.io 2023.</p>
           <p className='text-[white] sm:text-xs md:text-base'>Terms and Conditions</p>
           <p className='text-[white] sm:text-xs md:text-base'>Privacy and Policy</p>

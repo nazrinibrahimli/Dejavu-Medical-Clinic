@@ -14,7 +14,7 @@ const specialServices = () => {
               <div className="mt-[8rem] w-[25rem] h-[42rem] rounded-t-full  border-[1rem] border-green rounded-b-3xl bg-cover hover:bg-[url('/static/doctor-3.jpg')] bg-[url('/static/doctor-4.jpg')] "></div>
               </Grid>
               <Grid item sm={12} md={6} lg={6}>
-              <h1 className='text-start sm:text-center  md:text-start pt-[5rem] font-semibold text-[#252849] sm:px-[4rem] md:px-[1rem]'>Our <span className='text-light-blue'>Special Services</span></h1>
+              <h1 className='text-start sm:text-center  md:text-start pt-[5rem] font-semibold text-[#252849] sm:px-[4rem] md:px-[1rem]'>Our <span className='text-[#072852]'>Special Services</span></h1>
               <p className='text-gray sm:text-center  md:text-start my-[2rem]  md:px-[1rem]  leading-loose text-base '>In times like today, your healt is very important, especially since the number of COVID-19 cases is increasing day by day, so we are ready to help you with your health consultation.</p>
               <Box>
               <Grid container className='sm:px-[4rem] md:px-[1rem]'>
